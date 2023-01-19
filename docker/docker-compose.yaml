@@ -29,5 +29,10 @@ services:
       monitoring:
         aliases:
           - prometheus
+  influxDB:
+    image: influxdb:2.6.1
+    ports:
+      - 8086:8086
+    user: "$UID:$GID"
 networks:
   monitoring:
