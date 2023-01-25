@@ -48,4 +48,4 @@ Copy `./mnt` dir to root directory on docker-portainer host.
 It is the concatenation of `CLIENTNAME` and `STARTDATETIME`.
 
 ## Disclaimer
-Inspired by https://www.blazemeter.com/blog/make-use-of-docker-with-jmeter-learn-how
+Based on https://github.com/testsmith-io/jmeter-influxdb-grafana-docker
