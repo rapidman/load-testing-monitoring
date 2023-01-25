@@ -20,7 +20,7 @@ services:
     depends_on:
       - influxdb
     volumes:
-      - ./grafana/provisioning/:/etc/grafana/provisioning/
+      - /mnt/docker/grafana/provisioning/:/etc/grafana/provisioning/
     ports:
       - "3000:3000"
     env_file:
