@@ -13,11 +13,11 @@ services:
       - INFLUXDB_ADMIN_PASSWORD=admin
     volumes:
       - type: bind
-        source: /mnt/docker/influx_init.iql
-        target: /docker-entrypoint-initdb.d/influx_init.iql
+        source: "/mnt/docker/influx_init.iql"
+        target: "/docker-entrypoint-initdb.d/influx_init.iql"
       - type: bind
-        source: /mnt/docker/influxdb
-        target: /var/lib/influxdb
+        source: "/mnt/docker/influxdb"
+        target: "/var/lib/influxdb"
 
   grafana:
     image: grafana/grafana:8.5.2
