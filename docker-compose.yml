@@ -7,12 +7,14 @@ services:
      - 25826:25826/udp
     networks:
      - grafana-influxdb-network
-#    volumes:
-#      - ./influxdb/influx_init.iql:/docker-entrypoint-initdb.d/influx_init.iql
-#      - ./influxdb/types.db:/usr/share/collectd/types.db:ro
-#      - ./influxdb/data:/var/lib/influxdb
-#      - ./influxdb/config/:/etc/influxdb/
-#      - ./influxdb/:/etc/influxdb/
+    volumes:
+      - type: bind
+        source: ./influxdb/influx_init.iql
+        target: /docker-entrypoint-initdb.d/influx_init.iql
+      - ./influxdb/types.db:/usr/share/collectd/types.db:ro
+      - ./influxdb/data:/var/lib/influxdb
+      - ./influxdb/config/:/etc/influxdb/
+      - ./influxdb/:/etc/influxdb/
 
   grafana:
     image: grafana/grafana:8.5.2
