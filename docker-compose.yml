@@ -8,13 +8,11 @@ services:
     networks:
       - grafana-influxdb-network
     environment:
-      - INFLUXDB_DB=jmeter_results
       - INFLUXDB_ADMIN_USER=admin
       - INFLUXDB_ADMIN_PASSWORD=admin
     volumes:
       - /mnt/docker/influx_init.iql:/docker-entrypoint-initdb.d/influx_init.iql
       - /mnt/docker/influxdb:/var/lib/influxdb
-
   grafana:
     image: grafana/grafana:8.5.2
     depends_on:

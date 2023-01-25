@@ -7,9 +7,6 @@ This is a container setup that allows you to immediately synchronize JMeter resu
 ## Prerequisites
 Ensure both docker and docker-compose are installed.
 
-## Build JMeter docker image
-`docker build -t jmeter jmeter-docker`
-
 ## Start InfluxDB and Grafana
 `docker-compose up -d`
 
@@ -35,11 +32,15 @@ summaryOnly	| false
 samplersRegex | .*
 percentiles	| 90;95;99
 testTitle	| Test name
-eventTags	| 
+eventTags	|
 
+## Mount docker volume on Docker Portainer host 
+Copy `./mnt` dir to root directory on docker-portainer host. 
 
 ## Run JMeter script
-`./run-specific-jmeter-script.sh example.jmx`
+- Download latest [JMeter](https://jmeter.apache.org/download_jmeter.cgi) release. 
+- Add `jmeter/bin` directory to `path` variable
+- Launch `./run.sh`
 
 ## Filter the correct testrun in Grafana
 ![Grafana Filter](docs/images/Grafana_filter.png)
