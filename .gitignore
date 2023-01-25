@@ -1,4 +1,7 @@
-./docker/grafana
-./docker/promheteus
 .idea
-*.iml
+influxdb/config/
+influxdb/data/
+influxdb/types.db/
+.DS_Store
+jmeter-scripts/results
+jmeter.log
