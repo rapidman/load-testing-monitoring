@@ -11,7 +11,7 @@ services:
       - INFLUXDB_ADMIN_PASSWORD=admin
     volumes:
       - ./mnt/docker/influx_init.iql:/docker-entrypoint-initdb.d/influx_init.iql
-      - ./mnt/docker/influxdb:/var/lib/influxdb
+      - influxdb_data:/var/lib/influxdb
 
   grafana:
     image: grafana/grafana:8.5.2
@@ -52,6 +52,7 @@ services:
 volumes:
   prometheus_data: { }
   grafana_data: {}
+  influxdb_data: {}
 
 networks:
   monitoring-network:
