@@ -11,8 +11,11 @@ datasources:
     access: proxy
     database: jmeter_results
     url: http://influxdb:8086
-  - name: collectd
-    type: influxdb
+  - name: Prometheus
+    type: prometheus
     access: proxy
-    database: collectd
-    url: http://influxdb:8086
+    orgId: 1
+    url: http://prometheus:9090
+    basicAuth: false
+    isDefault: true
+    editable: true
