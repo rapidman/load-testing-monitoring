@@ -63,6 +63,21 @@
             <stringProp name="Argument.value">${__time(yy-MM-dd-HH:mm:ss:SSS)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="NUMBER_OF_THREADS" elementType="Argument">
+            <stringProp name="Argument.name">NUMBER_OF_THREADS</stringProp>
+            <stringProp name="Argument.value">${__P(env.NUMBER_OF_THREADS)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="RAMP_UP_PERIOD_SECONDS" elementType="Argument">
+            <stringProp name="Argument.name">RAMP_UP_PERIOD_SECONDS</stringProp>
+            <stringProp name="Argument.value">${__P(env.RAMP_UP_PERIOD_SECONDS)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="LOOP_COUNT" elementType="Argument">
+            <stringProp name="Argument.name">LOOP_COUNT</stringProp>
+            <stringProp name="Argument.value">${__P(env.LOOP_COUNT)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
