@@ -1,9 +1,10 @@
 version: '2.4'
 services:
   influxdb:
-    image: influxdb
-    container_name: influxdb1.8
-    build: ./influxdb
+    build:
+      context: ./influxdb
+      dockerfile: Dockerfile
+    image: influxdb/v1.8
     ports:
       - "8086:8086"
     networks:
