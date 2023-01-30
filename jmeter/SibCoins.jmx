@@ -40,17 +40,17 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="BASE_HOST" elementType="Argument">
             <stringProp name="Argument.name">BASE_HOST</stringProp>
-            <stringProp name="Argument.value">vm-sibedge-coins-dev.development.com</stringProp>
+            <stringProp name="Argument.value">${__P(env.BASE_HOST)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="PORT_NUMBER" elementType="Argument">
             <stringProp name="Argument.name">PORT_NUMBER</stringProp>
-            <stringProp name="Argument.value">5001</stringProp>
+            <stringProp name="Argument.value">${__P(env.PORT_NUMBER)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="PROTOCOL" elementType="Argument">
             <stringProp name="Argument.name">PROTOCOL</stringProp>
-            <stringProp name="Argument.value">http</stringProp>
+            <stringProp name="Argument.value">${__P(env.PROTOCOL)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="CLIENTNAME" elementType="Argument">
@@ -108,7 +108,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">${LOOP_COUNT}</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">${NUMBER_OF_THREADS}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RAMP_UP_PERIOD_SECONDS}</stringProp>
