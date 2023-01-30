@@ -2,7 +2,7 @@ version: '2.4'
 services:
   influxdb:
     image: influxdb
-    container_name: influxdb
+    container_name: influxdb1.8
     build: ./influxdb
     ports:
       - "8086:8086"
