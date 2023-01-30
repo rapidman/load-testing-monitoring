@@ -9,7 +9,7 @@ services:
     networks:
       - monitoring-network
     volumes:
-      - influxdb_data:/var/lib/influxdb2
+      - influxdb_data:/var/lib/influxdb
 
   grafana:
     image: grafana
