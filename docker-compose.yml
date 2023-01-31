@@ -5,6 +5,7 @@ services:
       context: ./influxdb
       dockerfile: Dockerfile
     image: influxdb/v1.8
+    container_name: influxdb-monitoring
     ports:
       - "8086:8086"
     networks:
@@ -13,9 +14,11 @@ services:
       - influxdb_data:/var/lib/influxdb
 
   grafana:
+    build:
+      context: ./grafana
+      dockerfile: Dockerfile
     image: grafana
-    container_name: grafana
-    build: ./grafana
+    container_name: grafana-monitoring
     depends_on:
       - influxdb
       - prometheus
@@ -32,10 +35,12 @@ services:
       - monitoring-network
 
   prometheus:
+    build:
+      context: ./prometheus
+      dockerfile: Dockerfile
     image: prometheus
-    container_name: prometheus
+    container_name: prometheus-monitoring
     restart: unless-stopped
-    build: ./prometheus
     volumes:
       - prometheus_data:/prometheus
     expose:
