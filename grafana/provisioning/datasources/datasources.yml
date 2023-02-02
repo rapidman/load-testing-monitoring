@@ -10,7 +10,7 @@ datasources:
     type: influxdb
     access: proxy
     database: jmeter_results
-    url: http://influxdb:8086
+    url: http://localhost:8086
   - name: Prometheus
     type: prometheus
     access: proxy
