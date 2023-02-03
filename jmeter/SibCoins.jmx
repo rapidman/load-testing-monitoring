@@ -897,7 +897,7 @@
               </elementProp>
               <elementProp name="application" elementType="Argument">
                 <stringProp name="Argument.name">application</stringProp>
-                <stringProp name="Argument.value">sibcoins</stringProp>
+                <stringProp name="Argument.value">${CLIENTNAME}_${STARTDATETIME}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="measurement" elementType="Argument">
