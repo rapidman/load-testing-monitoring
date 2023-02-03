@@ -841,7 +841,7 @@
         }
       ],
       "timeRegions": [],
-      "title": "By Operation (95th pct)",
+      "title": "Response time by Operation (95th pct)",
       "tooltip": {
         "msResolution": false,
         "shared": true,
@@ -993,7 +993,7 @@
         }
       ],
       "timeRegions": [],
-      "title": "By Request (95th pct)",
+      "title": "Response time by Request (95th pct)",
       "tooltip": {
         "msResolution": false,
         "shared": true,

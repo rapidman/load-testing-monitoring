@@ -1,4 +1,4 @@
-version: '2.4'
+version: "2.4"
 services:
   influxdb:
     build:
@@ -21,45 +21,45 @@ services:
     container_name: grafana-monitoring
     depends_on:
       - influxdb
-      - prometheus
+      # - prometheus
     volumes:
       - grafana_data:/var/lib/grafana
     ports:
       - "3000:3000"
     env_file:
-      - 'grafana.env'
+      - "grafana.env"
     links:
       - influxdb
-      - prometheus
+      # - prometheus
     networks:
       - monitoring-network
 
-  prometheus:
-    build:
-      context: ./prometheus
-      dockerfile: Dockerfile
-    image: prometheus
-    container_name: prometheus-monitoring
-    restart: unless-stopped
-    volumes:
-      - prometheus_data:/prometheus
-    expose:
-      - 9090
-    networks:
-      - monitoring-network
+  # prometheus:
+  #   build:
+  #     context: ./prometheus
+  #     dockerfile: Dockerfile
+  #   image: prometheus
+  #   container_name: prometheus-monitoring
+  #   restart: unless-stopped
+  #   volumes:
+  #     - prometheus_data:/prometheus
+  #   expose:
+  #     - 9090
+  #   networks:
+  #     - monitoring-network
 
-  zipkin:
-    image: ghcr.io/openzipkin/zipkin-slim
-    container_name: zipkin
-    ports:
-      - 9411:9411
-    networks:
-      - monitoring-network
+  # zipkin:
+  #   image: ghcr.io/openzipkin/zipkin-slim
+  #   container_name: zipkin
+  #   ports:
+  #     - 9411:9411
+  #   networks:
+  #     - monitoring-network
 
 volumes:
-  prometheus_data: { }
-  grafana_data: { }
-  influxdb_data: { }
+  prometheus_data: {}
+  grafana_data: {}
+  influxdb_data: {}
 
 networks:
   monitoring-network:

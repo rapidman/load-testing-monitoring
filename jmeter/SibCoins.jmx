@@ -108,10 +108,10 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${NUMBER_OF_THREADS}</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">${RAMP_UP_PERIOD_SECONDS}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">200</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">7</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">0</stringProp>
         <stringProp name="ThreadGroup.delay">0</stringProp>
@@ -134,9 +134,9 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Auth</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -186,9 +186,9 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Accumulation</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -231,9 +231,9 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Employee/CurrentUserInfo</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -276,9 +276,9 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Employee/CurrentUserBalance</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -329,9 +329,9 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Report/GetPopularMerchandise</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -374,9 +374,9 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Fund</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -419,9 +419,9 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Merchandise</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -482,9 +482,9 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">/api/Transaction</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -554,9 +554,9 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Accumulation</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -599,9 +599,9 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Accumulation</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -657,9 +657,9 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Merchandise</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -737,7 +737,7 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
             <stringProp name="HTTPSampler.port">5001</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -795,9 +795,9 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Transaction/Remittance</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -840,9 +840,9 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_HOST}</stringProp>
-            <stringProp name="HTTPSampler.port">${PORT_NUMBER}</stringProp>
-            <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
+            <stringProp name="HTTPSampler.domain">sibedgecoinstest.development.com</stringProp>
+            <stringProp name="HTTPSampler.port">5001</stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">api/Employee/CurrentUserBalance</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -892,7 +892,7 @@
               </elementProp>
               <elementProp name="influxdbUrl" elementType="Argument">
                 <stringProp name="Argument.name">influxdbUrl</stringProp>
-                <stringProp name="Argument.value">http://${BASE_HOST}:8086/write?db=jmeter_results</stringProp>
+                <stringProp name="Argument.value">http://sibedgecoinstest.development.com:8086/write?db=jmeter_results</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="application" elementType="Argument">

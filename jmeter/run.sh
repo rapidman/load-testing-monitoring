@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JVM_ARGS="-Xms1024m -Xmx1024m" jmeter \
+JVM_ARGS="-Xms1024m -Xmx1024m" ../../apache-jmeter-5.5/bin/jmeter \
         -JNUMBER_OF_THREADS=10 \
         -JRAMP_UP_PERIOD_SECONDS=10 \
         -JLOOP_COUNT=2 \
