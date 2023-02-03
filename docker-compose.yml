@@ -30,7 +30,7 @@ services:
       - "grafana.env"
     links:
       - influxdb
-      - prometheus
+      # - prometheus
     networks:
       - monitoring-network
 
