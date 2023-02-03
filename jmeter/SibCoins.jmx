@@ -40,17 +40,17 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="BASE_HOST" elementType="Argument">
             <stringProp name="Argument.name">BASE_HOST</stringProp>
-            <stringProp name="Argument.value">${__P(env.BASE_HOST)}</stringProp>
+            <stringProp name="Argument.value">${__P(BASE_HOST)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="PORT_NUMBER" elementType="Argument">
             <stringProp name="Argument.name">PORT_NUMBER</stringProp>
-            <stringProp name="Argument.value">${__P(env.PORT_NUMBER)}</stringProp>
+            <stringProp name="Argument.value">${__P(PORT_NUMBER)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="PROTOCOL" elementType="Argument">
             <stringProp name="Argument.name">PROTOCOL</stringProp>
-            <stringProp name="Argument.value">${__P(env.PROTOCOL)}</stringProp>
+            <stringProp name="Argument.value">${__P(PROTOCOL)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="CLIENTNAME" elementType="Argument">
@@ -65,17 +65,17 @@
           </elementProp>
           <elementProp name="NUMBER_OF_THREADS" elementType="Argument">
             <stringProp name="Argument.name">NUMBER_OF_THREADS</stringProp>
-            <stringProp name="Argument.value">${__P(env.NUMBER_OF_THREADS)}</stringProp>
+            <stringProp name="Argument.value">${__P(NUMBER_OF_THREADS)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="RAMP_UP_PERIOD_SECONDS" elementType="Argument">
             <stringProp name="Argument.name">RAMP_UP_PERIOD_SECONDS</stringProp>
-            <stringProp name="Argument.value">${__P(env.RAMP_UP_PERIOD_SECONDS)}</stringProp>
+            <stringProp name="Argument.value">${__P(RAMP_UP_PERIOD_SECONDS)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="LOOP_COUNT" elementType="Argument">
             <stringProp name="Argument.name">LOOP_COUNT</stringProp>
-            <stringProp name="Argument.value">${__P(env.LOOP_COUNT)}</stringProp>
+            <stringProp name="Argument.value">${__P(LOOP_COUNT)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
