@@ -21,7 +21,7 @@ services:
     container_name: grafana-monitoring
     depends_on:
       - influxdb
-      - prometheus
+      # - prometheus
     volumes:
       - grafana_data:/var/lib/grafana
     ports:
