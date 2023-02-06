@@ -3,8 +3,14 @@ services:
   influxdb:
     build:
       context: ./influxdb
+      args:
+        INFLUXDB_USERNAME: ${INFLUXDB_USERNAME}
+        INFLUXDB_PASSWORD: ${INFLUXDB_PASSWORD}
+        INFLUXDB_ORG: ${INFLUXDB_ORG}
+        INFLUXDB_BUCKET: ${INFLUXDB_BUCKET}
+        INFLUXDB_ADMIN_TOKEN: ${INFLUXDB_ADMIN_TOKEN}
       dockerfile: Dockerfile
-    image: influxdb/v1.8
+    image: influxdb/v2
     container_name: influxdb-monitoring
     ports:
       - "8086:8086"
@@ -16,6 +22,12 @@ services:
   grafana:
     build:
       context: ./grafana
+      args:
+        GF_SECURITY_ADMIN_USER: ${GRAFANA_USERNAME}
+        GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD}
+        INFLUXDB_ORG: ${INFLUXDB_ORG}
+        INFLUXDB_BUCKET: ${INFLUXDB_BUCKET}
+        INFLUXDB_ADMIN_TOKEN: ${INFLUXDB_ADMIN_TOKEN}
       dockerfile: Dockerfile
     image: grafana
     container_name: grafana-monitoring
@@ -26,8 +38,6 @@ services:
       - grafana_data:/var/lib/grafana
     ports:
       - "3000:3000"
-    env_file:
-      - "grafana.env"
     links:
       - influxdb
       # - prometheus
@@ -57,9 +67,9 @@ services:
   #     - monitoring-network
 
 volumes:
-  prometheus_data: {}
-  grafana_data: {}
-  influxdb_data: {}
+  prometheus_data: { }
+  grafana_data: { }
+  influxdb_data: { }
 
 networks:
   monitoring-network:
