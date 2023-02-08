@@ -44,32 +44,9 @@ services:
     networks:
       - monitoring-network
 
-  # prometheus:
-  #   build:
-  #     context: ./prometheus
-  #     dockerfile: Dockerfile
-  #   image: prometheus
-  #   container_name: prometheus-monitoring
-  #   restart: unless-stopped
-  #   volumes:
-  #     - prometheus_data:/prometheus
-  #   expose:
-  #     - 9090
-  #   networks:
-  #     - monitoring-network
-
-  # zipkin:
-  #   image: ghcr.io/openzipkin/zipkin-slim
-  #   container_name: zipkin
-  #   ports:
-  #     - 9411:9411
-  #   networks:
-  #     - monitoring-network
-
 volumes:
-  prometheus_data: { }
-  grafana_data: { }
-  influxdb_data: { }
+  grafana_data: {}
+  influxdb_data: {}
 
 networks:
   monitoring-network:
