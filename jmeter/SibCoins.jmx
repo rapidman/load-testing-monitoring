@@ -122,7 +122,7 @@
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">${NUMBER_OF_THREADS}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RAMP_UP_PERIOD_SECONDS}</stringProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">${THREAD_DURATION}</stringProp>
         <stringProp name="ThreadGroup.delay">${NUMBER_OF_THREADS}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
